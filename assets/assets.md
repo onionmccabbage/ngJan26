@@ -7,12 +7,12 @@
 * 'ng21git_examples' folder is a sub-set of the examples from the official Angular repo (Remember to use npm install)
 
 #### Angular Roadmap
-https://angular.dev/roadmap
-e#### Angular AI Best Practices
-https://angular.dev/ai/develop-with-ai 
+- https://angular.dev/roadmap
+#### Angular AI Best Practices
+- https://angular.dev/ai/develop-with-ai 
 #### Updating and Migrating to newer Angular Versions
-https://angular.dev/update-guide
-https://angular.dev/reference/migrations
+- https://angular.dev/update-guide
+- https://angular.dev/reference/migrations
 
 ## Other URLs that may be used during the course
 ### The Angular Evolution Guide (free book)
@@ -20,8 +20,8 @@ Sign up to download your own copy
 - https://houseofangular.io/the-ultimate-guide-to-angular-evolution/
 
 ### NgRX
-https://ngrx.io
-https://github.com/ngrx/platform.git
+- https://ngrx.io
+- https://github.com/ngrx/platform.git
 
 ### NgRx Signals Store Example and Tutorial: 
 Angular-Cookbook-2E book repository and video (the book is not free)
@@ -31,8 +31,8 @@ Angular-Cookbook-2E book repository and video (the book is not free)
 - https://www.youtube.com/watch?v=8NizpXo4O74
 
 ### Redux
-https://angular-redux.js.org/   
-https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/
+- https://angular-redux.js.org/   
+- https://blog.angular-university.io/angular-2-redux-ngrx-rxjs/
 
 ### Playwright
 - https://playwright.dev/
