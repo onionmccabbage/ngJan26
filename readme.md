@@ -1,2 +1,2 @@
-## Angular 18-21 Training
+## Angular 18-21 Training 
 This repository accompanies the training course in late January. Many of the resources used here are cloned from other repositories; these are acknowledged within the code in this repository

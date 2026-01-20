@@ -1,4 +1,4 @@
-## Previous Angular Training
+## Previous Angular Training 
 
 Here is a reminder of the repositories from the previous Angular training
 
