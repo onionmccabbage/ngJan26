@@ -4,8 +4,6 @@
 - https://angular.dev
 - https://github.com/angular/angular
 
-* 'ng21git_examples' folder is a sub-set of the examples from the official Angular repo (Remember to use npm install)
-
 #### Angular Roadmap
 - https://angular.dev/roadmap
 #### Angular AI Best Practices
