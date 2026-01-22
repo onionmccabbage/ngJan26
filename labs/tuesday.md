@@ -2,11 +2,13 @@
 * A Single Page Application is required to present a user interface for the remote API at
 https://home.openweathermap.org/ (This site also provides plenty of documentation about how to read from the API)
 * The expectation is that NgRX will be used to manage state throughout the application
+* Individual or group solutions are fine
 
 You may choose to sign up for a free API key or use this one:
 * appid=48f2d5e18b0d2bc50519b58cce6409f1
 * This is limited to 60 requests per minute
 
+There will be stand-up reports at 40 minute intervals. 
 At the end there will be an opportunity to talk us through what you built. Your thinking processes and implementations are key 
 
 * Weather data is available for a city, or city and country

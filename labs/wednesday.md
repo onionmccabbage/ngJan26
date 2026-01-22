@@ -1,8 +1,9 @@
 ## Testing with Playwright
-* Use Playwright to implement end to end tests for either of the previous labs
+* Individually or in groups, use Playwright to implement end to end tests for either of the previous labs
 * If you wish to develop further features, try test-driven-development
 
 There will be an opportunity to talk us through what you built. Thinking and implementations are key 
+There may be stand-up reports during the lab
 
 * Try writing some user stories the nimplment these as end to end tests
 * See if there is any opportunity to implement beforeEach or beforeAll
