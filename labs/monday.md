@@ -2,8 +2,10 @@
 * A Single Page Application is required to present a user interface for the remote API at
 https://swapi.dev/api  (This site provides plenty of documentation about how to read from the API)
 
-* Data categories are available for people, planets, vehicles, species and starships
-* Some of these are known to return no data (e.g. vehicles/1)
+In this lab you should build a minimum viable product to consume this data with user-provided city value. (You may choose to also provide a country)
+Either create individual solutions or work with colleagues
+To help with progress, there will be stand-up reports at 40 minute intervals
+When the time allocated for this lab expires, there will be an opportunity to talk us through what you built. It is not expected to be beautiful or even functionaly complete, but your thinking processes and implementations are key 
 
 ##### User Interface
 * A basic user story would include choosing a category and an id to retrieve data about that entity
@@ -20,7 +22,7 @@ https://swapi.dev/api  (This site provides plenty of documentation about how to 
 * It is acceptable to show just the name value for all categories
 * If possible, other values per category should also be shown
 * This might be through component inheritance, content projection or any architecture you like
-* Bear in mind that this project may evolve to include other kinds of related data in the future
+* Bear in mind that this project may evolve to include other kinds of related data in the future (though not on this course)
 
 ##### Data retrieval, filtering and persistence
 * If possible data should be retrieved from the API

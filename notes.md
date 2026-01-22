@@ -9,6 +9,7 @@ Toby Dussek
 * 12:30 lunch
 *  3:00 afternoon break
 *  5:00 done
+  
 (break times are all flexible)
 
 ##### The repository for this course is
