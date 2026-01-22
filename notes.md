@@ -4,12 +4,13 @@
 
 Toby Dussek 
 
-*  9:00 start
+*  9:30 start
 * 11:00 morning break
 * 12:30 lunch
 *  3:00 afternoon break
 *  5:00 done
- 
+(break times are all flexible)
+
 ##### The repository for this course is
 - https://github.com/onionmccabbage/ngJan26
 
