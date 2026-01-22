@@ -22,7 +22,7 @@ At the end there will be an opportunity to talk us through what you built. Your 
 * Any other services may be created as you see fit
 
 ##### Architecture
-* NgRX principlas should be used
+* NgRX principles should be used
 * Beyond that, the architecture, division of responsibility, choice of package and module names is open ended
 
 ##### Re-useable Components
@@ -35,6 +35,6 @@ At the end there will be an opportunity to talk us through what you built. Your 
 ##### Further Features if time
 * In addition to the description and temperature, also display the wind speed and direction (and any other data points you like)
 * Persist each successful weather retrieval in localStorage and provide a way to see these historical reports
-* Here is a long-ish list of places in Ireland. Retrieve the weather for some or all of them, then display the results nicely:
-    - 
+* In the assets for thsi repository there is a long-ish list of places in Ireland. Retrieve the weather for some or all of them (or your own places), then display the results nicely
 * Each weather report comes back with lat/lon data. Find a useful way to use this
+* Use a dummy user API (e.g. https://dummyjson.com/users) to implement some user authentication
