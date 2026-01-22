@@ -38,5 +38,6 @@ At the end there will be an opportunity to talk us through what you built. Your 
 * Persist each successful weather retrieval in localStorage and provide a way to see these historical reports
 * In the assets for this repository there is a long-ish list of places in Ireland. Retrieve the weather for some or all of them (or your own places), then display the results nicely
 * The openweathermap API also provides icons for weather conditions. Use these in the UI
-* Each weather report comes back with lat/lon data. Find a useful way to use this
+* There is an API you could use that provides a lot of country-specific information: https://restcountries.com/
+* Each weather report comes back with lat/lon data. Find a useful way to use this.
 * Use a dummy user API (e.g. https://dummyjson.com/users) to implement some user authentication
