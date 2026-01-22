@@ -35,3 +35,4 @@ When the time allocated for this lab expires, there will be an opportunity to ta
 ##### Further Features if time
 * When data is displayed to the user (representing a single entity), retrieve the details for each of the films and display it
 * For each category, also retrieve an image of your own choosing, by making use of the remote API at https://robohash.org/ 
+* There is also a resource here https://dribbble.com/shots/3907212-Starwars-Icon-Set you may like to use
