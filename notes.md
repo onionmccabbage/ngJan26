@@ -12,11 +12,13 @@ Toby Dussek
   
 (break times are all flexible)
 
-##### The repository for this course is
-- https://github.com/onionmccabbage/ngJan26
+##### The course website is
+- https://go.neueda.com/516
 
 ### Monday
 - Welcome, technical check, VMs
+- Problems/issues you are facing
+- Issues at enterprise level
 - Angular 18-21 new features and roadmap
 - Lab exercise: build an SPA using new architecture and features
 - Additional feature awareness
