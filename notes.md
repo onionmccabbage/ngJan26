@@ -15,7 +15,7 @@ Toby Dussek
 ##### The course website is
 - https://go.neueda.com/516
 
-To clone the cours erepository:
+To clone the course repository:
 - git clone https://github.com/onionmccabbage/ngJan26
 
 
@@ -29,6 +29,7 @@ To clone the cours erepository:
 - Angular 18-21 new versions, features and roadmap
 - Lab exercise: build an SPA using new architecture and features
 - Additional feature awareness
+- reactivity- immutable
 - ssr...?
 - typescript
 
@@ -43,5 +44,5 @@ To clone the cours erepository:
 - New unit testing in Angular
 - End to end testing with Playwright
 - Lab exercise: implement tests in existing projects
-- how to grb stuff off the VMs
+- how to grab stuff off the VMs
 - course conclusion and feedback
