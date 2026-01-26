@@ -1,16 +1,24 @@
-<aside>
-    <h3>Todo List</h3>
+<h3>Todos List</h3>
 
-    <!-- we use a structural directive to conditionally show -->
-     @if (!todoItems().length){
-        <p>Loading...</p>
-     }
+<!-- @if is a structural directive -->
+@if (!todoItems().length) {
+  <p>Loading...</p>
+}
 
-     <ul>
-        <!-- we iterate over zero or more 'todo' items -->
-         @for (todo of todoItems(); track todo.id) {
-            <app-todo-item [todo]="todo" />
-         }
+<form>
+  <label>Filter Todos</label>
+  <!-- if we ever use ngModel we MUST import the FormsModule -->
+  <input
+  name="searchTerm"
+  
+  [(ngModel)]="searchTerm"
+  placeholder="Search todos..."
+  />
+</form>
 
-     </ul>
-</aside>
+<ul class="todos">
+  <!-- @for is a structural directive -->
+  @for (todo of todoItems() | filterTodos : searchTerm(); track todo.id) {
+  <app-todo-item (todoToggled)="updateTodoItem($event)" [todo]="todo" />
+  }
+</ul>

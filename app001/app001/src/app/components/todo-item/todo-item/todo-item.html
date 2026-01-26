@@ -1,6 +1,13 @@
-<section>
-        <li>
-            {{todo().title}}
-        </li>
-
-</section>
+<li
+  appHighlightCompletedTodo
+  [isCompleted]="todo().completed"
+  class="todos__item"
+>
+  <input
+    id="todo-{{ todo().id }}"
+    type="checkbox"
+    [checked]="todo().completed"
+    (change)="this.todoClicked()"
+  />
+  <label for="todo-{{ todo().id }}">{{ todo().title | uppercase }}</label>
+</li>

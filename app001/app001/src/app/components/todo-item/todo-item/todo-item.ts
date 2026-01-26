@@ -1,18 +1,19 @@
-import { Component, input, output, signal } from '@angular/core';
-import { Todo } from '../../../model/todo.type';
+import { Component, input, output } from '@angular/core';
+import { Todo } from '../../../model/todo.type'; 
+import { UpperCasePipe } from '@angular/common';
+import { HighlightCompletedTodoDirective } from '../../../directives/highlight-completed-todo.directive';
 
 @Component({
-  selector: 'app-todo-item',
-  imports: [],
-  templateUrl: './todo-item.html',
-  styleUrl: './todo-item.scss',
+    selector: 'app-todo-item',
+    imports: [HighlightCompletedTodoDirective, UpperCasePipe],
+    templateUrl: './todo-item.html',
+    styleUrl: './todo-item.scss'
 })
-export class TodoItem {
-    todo = input.required<Todo>()
-    todoToggled = output<Todo>()
+export class TodoItemComponent {
+  todo = input.required<Todo>();
+  todoToggled = output<Todo>();
 
-    // some methods
-    todoClicked(){
-      this.todoToggled.emit(this.todo())
-    }
+  todoClicked() {
+    this.todoToggled.emit(this.todo());
+  }
 }

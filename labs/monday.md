@@ -2,7 +2,8 @@
 * A Single Page Application is required to present a user interface for the remote API at
 https://swapi.dev/api  (This site provides plenty of documentation about how to read from the API)
 
-In this lab you should build a minimum viable product to consume this data with user-provided city value. (You may choose to also provide a country)
+In this lab you should build a minimum viable product to consume this data with user-provided category value. (one of people, planets, vehicles, species or starships)
+You may stick with id=1 or also ask the user for this
 Either create individual solutions or work with colleagues
 To help with progress, there will be stand-up reports at 40 minute intervals
 When the time allocated for this lab expires, there will be an opportunity to talk us through what you built. It is not expected to be beautiful or even functionaly complete, but your thinking processes and implementations are key 
