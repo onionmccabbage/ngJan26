@@ -1,0 +1,133 @@
+@if(isLoading()) {
+<div class="spinner-overlay">
+  <mat-spinner></mat-spinner>
+</div>
+} @else {
+
+<mat-tab-group (selectedIndexChange)="selectedTabIndex.set($event)">
+  <mat-tab label="Properties">
+    <ng-template matTabContent>
+      <app-properties
+        [data]="data()"
+        [resourceType]="resourceType()"
+      ></app-properties>
+    </ng-template>
+  </mat-tab>
+
+  @if(displayFilmsTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label>
+      <mat-icon svgIcon="sw_film" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['films']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >Films</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'films'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  } @if(displayPeopleTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label
+      ><mat-icon svgIcon="sw_people" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['people']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >People</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'people'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  } @if(displayPlanetsTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label
+      ><mat-icon svgIcon="sw_planet" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['planets']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >Planets</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'planets'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  } @if(displaySpeciesTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label
+      ><mat-icon svgIcon="sw_species" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['species']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >Species</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'species'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  } @if(displayStarshipsTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label
+      ><mat-icon svgIcon="sw_starship" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['starships']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >Starships</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'starships'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  } @if(displayVehiclesTab()) {
+  <mat-tab
+    ><ng-template mat-tab-label
+      ><mat-icon svgIcon="sw_vehicle" class="icon-lightgray"></mat-icon>
+      <span
+        [matBadge]="resourceCounts()['vehicles']"
+        matBadgeSize="large"
+        matBadgeOverlap="false"
+        >Vehicles</span
+      >
+    </ng-template>
+    <ng-template matTabContent>
+      <app-resource-data
+        [data]="data()"
+        [resourceType]="'vehicles'"
+        [selectedTabName]="selectedTabName()"
+      ></app-resource-data>
+    </ng-template>
+  </mat-tab>
+  }
+</mat-tab-group>
+}

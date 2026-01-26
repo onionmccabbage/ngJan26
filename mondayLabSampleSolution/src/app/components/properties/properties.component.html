@@ -1,0 +1,21 @@
+<div class="properties-container">
+  @for(prop of displayProperties(); track $index) {
+  <div class="properties-content">
+    <div class="property-key">
+      <strong>{{ prop.key }}</strong>
+    </div>
+    <div class="property-value">
+      @if(prop.key !== 'Homeworld') {
+      <span [attr.data-testid]="prop.key">{{ prop.value }}</span>
+      } @else {
+      <a
+        [attr.data-testid]="prop.key"
+        class="link-text"
+        [routerLink]="`/details/${ homeworldUrlParts()?.resource }/${ homeworldUrlParts()?.id }`"
+        >{{ homeworldName() }}</a
+      >
+      }
+    </div>
+  </div>
+  }
+</div>

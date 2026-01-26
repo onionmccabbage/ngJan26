@@ -1,0 +1,35 @@
+@use "@angular/material" as mat;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 128px);
+
+  @include mat.tabs-overrides(
+    (
+      active-indicator-color: #e70263,
+      active-hover-indicator-color: #e70263,
+      active-focus-indicator-color: #e70263,
+    )
+  );
+
+  @include mat.badge-overrides(
+    (
+      background-color: #a01ff3,
+      text-color: white,
+    )
+  );
+}
+
+.icon-lightgray {
+  color: lightgray;
+  margin-right: 8px;
+}
+
+.spinner-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+}
