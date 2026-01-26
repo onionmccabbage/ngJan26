@@ -31,7 +31,8 @@ To clone the course repository:
 - Angular 18-21 new versions, features and roadmap
 - Lab exercise: build an SPA using new architecture and features
 - Additional feature awareness
-- reactivity- immutable
+- reactivity > immutable
+- transitory features of signal....
 - ssr...?
 - typescript
 

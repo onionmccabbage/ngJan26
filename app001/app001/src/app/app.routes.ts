@@ -7,4 +7,10 @@ export const routes: Routes = [
         loadComponent: () => import('./components/home/home/home')
                 //  .then((m)=>m.Home) // ...
   },
+  {
+    path:'todos',
+    loadComponent: ()=>{
+        return import('')
+    }
+  }
 ];
