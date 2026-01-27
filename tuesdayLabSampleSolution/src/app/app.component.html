@@ -1,0 +1,35 @@
+<main class="container">
+  <h1>Live Weather</h1>
+  <section>
+    <dl>
+      <dt>Angular 19.2</dt>
+      <dd>signals, stand-alone (no NgModule), DI</dd>
+      <dt>NgRX 19.2</dt>
+      <dd>actions, reducers, selectors, effects (not signalStore)</dd>
+      <dt>RxJS 7.8</dt>
+      <dd>catchError, delay, map, switchMap, of</dd>
+    </dl>
+  </section>
+  <input [(ngModel)]="city" placeholder="Enter City">
+  <button (click)="getWeather()">Get Weather</button>
+
+  @if(loading$ | async){
+  <section class="spinner-container">
+    <aside class="spinner"></aside>
+  </section>
+  }
+
+  @if(error$ | async){
+  <p>{{ error$ | async }}</p>
+  }
+
+  <!-- NB note the semi-colon so we can assign an alias -->
+  @if(weather$ | async; as weather){
+  <section>
+    <h2>{{weather.city}}</h2>
+    <p>{{weather.description}}</p>
+    <p>Temp: {{ weather.temperature }}°C</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+  </section>
+  }
+</main>
