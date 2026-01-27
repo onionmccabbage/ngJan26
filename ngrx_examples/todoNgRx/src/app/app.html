@@ -1,0 +1,62 @@
+<main>
+    <h3>Todo Manager</h3>
+    <!-- use this for simple debugging of the store structure -->
+    <!-- <pre>{{ store.todos() | json}}</pre> -->
+     <!-- (0 / 0) gets updated to... -->
+    <span>({{store.completedTodos().length}} /  {{store.todos().length}})</span>
+        <!-- Filters -->
+    <div class="mt-4">
+        <button [class.btnActive]="store.filter()=='all'" (click)="store.changeFilter('all')" class="p-2 rounded mr-2">All</button>
+        <button [class.btnActive]="store.filter()=='active'" (click)="store.changeFilter('active')" class="p-2 rounded mr-2">Active</button>
+        <button [class.btnActive]="store.filter()=='completed'" (click)="store.changeFilter('completed')" class="p-2 rounded">Completed</button>
+    </div>
+    <!-- implementing resource for searchTerm: add the search term field -->
+        <!-- with ngModelChange EVERY key-stroke will cause the resource to rerun filtered todos -->
+        <!-- so we look to using abortSignal to prevent too many of these -->
+        <!-- NB rxResource automatically aborts previous calls (can see that in the throttled console) -->
+        <!-- need to add a name attribute (then see the signal update in console effect) -->
+         <input 
+            name="searchTerm"
+            [(ngModel)] = "searchTerm"
+            placeholder="Search Todos"
+            (ngModelChange)="store.updateSearchTerm($event)" />
+            <!-- the ngModelChange binds to the updateSearchTerm method of the store -->
+        <pre>search term: {{store.searchTerm().toLowerCase()}}</pre>
+
+    <!-- Task Input -->
+    <div class="mb-4">
+        <!-- bind the form field value to a signal -->
+        <!-- NB why no () on this signal?? Also required is pointless here -->
+        <input [(ngModel)]="newTodoTitle" required placeholder="New task..." />
+        <!-- if we were handling onSubmit we may need to give the field a name -->
+        <button
+         [disabled]="!newTodoTitle()"
+         (click)="addNewTodo()">Add</button>
+    </div>
+    <ul>
+<!-- handle possible slow loading (here we just show a literal string)-->
+ <!-- emulate this by throttling the network (see dev tools) -->
+        @if(store.todosLoading()){ loading...}
+        <!-- ...what if there is an error -->
+        @else if (store.todosLoadingError()) { {{store.todosLoadingError()}} }
+        <!-- @for (todo of store.todos(); track $index) { -->
+        @for (todo of store.filteredTodos(); track $index) {
+            <!-- toggle the 'completed' when clicking the item -->
+            <li (click)="store.toggleTodoCompleted(todo.id)">
+                <input type="checkbox" [checked]="todo.completed" />
+                <!-- conditionally apply a css class style -->
+                <span [class.strike]="todo.completed">{{ todo.title }}</span>
+
+            </li>
+        }
+    </ul>
+    <hr/>
+    <app-snackbar>
+        <!-- content for the component -->
+        All todos completed
+    </app-snackbar>
+
+    <!-- do we need this?  -->
+    <router-outlet />
+
+</main>
