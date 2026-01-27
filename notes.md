@@ -37,10 +37,10 @@ To clone the course repository:
 - typescript
 
 ### Tuesday
-- Brief overview of where we got to
+> Brief overview of where we got to
 - Quick look at custom pipe
-- Any built solutions from Monday...
-- signals: model, effect, computed
+> Any built solutions from Monday...
+> signals: model, effect, computed
 - using the developer tools
 - q - Zoneless, 'out-of-zone' changes and cross-app changes
 - State Management with NgRX

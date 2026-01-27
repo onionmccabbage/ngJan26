@@ -16,6 +16,11 @@ import { increment, decrement, reset, multbyten } from '../counter.actions';
   `,
 })
 export class MyCounterComponent {
+
+  constructor(){
+    // inject into this context
+  }
+
   private readonly store: Store<{ count: number }> = inject(Store);
   count: Signal<number> = this.store.selectSignal((state) => state.count);
 
