@@ -37,7 +37,6 @@ To clone the course repository:
 
 ### Tuesday
 > Brief overview of where we got to
-- Quick look at custom pipe
 > Any built solutions from Monday...
 > signals: model, effect, computed
 > using the developer tools
@@ -45,8 +44,11 @@ To clone the course repository:
 > State Management with NgRX
 > Lab exercise: build an SPA implementing state management
 - Other approaches to state
+> httpResource ('get' only)  and resource. Also Rx and deep signal
 
 ### Wednesday
+- Quick look at custom pipe
+- an example using 'resource'
 - Testing
 - New unit testing in Angular
 - End to end testing with Playwright
