@@ -2,7 +2,7 @@
 
 #### 26-28 Jan 2026
 
-Toby Dussek  
+Toby Dussek
 
 *  9:30 start
 * 11:00 morning break
