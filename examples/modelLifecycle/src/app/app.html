@@ -1,0 +1,30 @@
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h1>Hello {{ title() }} it is {{dt}}</h1>
+      <section>
+        <signal-demo />
+        <app-receipt />
+        <article>
+          <custom-card>
+            <!-- can use an alias -->
+            <dt project-as="def-term">Hello</dt>
+            <p>Non-specific content</p>
+            <dd>Welcome to the example</dd>
+          </custom-card>
+        </article>
+        <!-- the following component is incomplete -->
+        <host-binding-demo value='3'/>
+        <host-binding-demo />
+        <host-binding-demo />
+        <hr/>
+        <dom-api-demo />
+      </section>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+    </div>
+  </div>
+</main>
+
+<router-outlet />

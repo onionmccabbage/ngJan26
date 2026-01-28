@@ -50,44 +50,17 @@ To clone the course repository:
 ### Wednesday
 > Quick look at custom pipe
 > an example using 'resource' (see todoNgRXresource example)
-- q - what code goes where for stateful coding....
+> q - what code goes where for stateful coding....
   see https://ngrx.io/guide/store/why
   also
   https://codeeve.com/2020/02/28/angular-application-state-management-you-do-not-need-external-data-stores-like-ngrx-redux-and-other/
 > Testing
 > New unit testing in Angular: vitest
 > End to end testing with Playwright
-- how to engage non-technical people with testing
-- Lab exercise: implement tests in existing projects
+> how to engage non-technical people with testing
+> Lab exercise: implement tests in existing projects
+
 - how to grab stuff off the VMs: tell me the folder and we will create a repo
 - course conclusion and feedback
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   https://test.neueda.com/survey/technology-training
   
