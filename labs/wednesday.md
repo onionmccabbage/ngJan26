@@ -1,4 +1,4 @@
-## Testing with Playwright
+## Testing with Playwright (ends at 3:35)
 * Individually or in groups, use Playwright to implement end to end tests for either of the previous labs
 * Record new tests and try writing by hand
 * Make use of trace
