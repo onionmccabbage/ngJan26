@@ -17,6 +17,7 @@ Toby Dussek
 
 To clone the course repository:
 - git clone https://github.com/onionmccabbage/ngJan26
+  (or just download it as a zip)
 
 
 ### Monday
@@ -39,15 +40,17 @@ To clone the course repository:
 > Any built solutions from Monday...
 > signals: model, effect, computed
 > using the developer tools
-- Zoneless, 'out-of-zone' changes and cross-app changes
+> Zoneless, 'out-of-zone' changes and cross-app changes
+  see https://angular.dev/api/core/NgZone#description
 > State Management with NgRX
 > Lab exercise: build an SPA implementing state management
-- Other approaches to state
+> Other approaches to state
 > httpResource ('get' only)  and resource. Also Rx and deep signal
 
 ### Wednesday
-- Quick look at custom pipe
-- an example using 'resource' (see todoNgRXresource example)
+> Quick look at custom pipe
+> an example using 'resource' (see todoNgRXresource example)
+- q - what code goes where for stateful coding....
 - Testing
 - New unit testing in Angular
 - End to end testing with Playwright
