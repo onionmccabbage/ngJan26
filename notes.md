@@ -51,6 +51,9 @@ To clone the course repository:
 > Quick look at custom pipe
 > an example using 'resource' (see todoNgRXresource example)
 - q - what code goes where for stateful coding....
+  see https://ngrx.io/guide/store/why
+  also
+  https://codeeve.com/2020/02/28/angular-application-state-management-you-do-not-need-external-data-stores-like-ngrx-redux-and-other/
 > Testing
 > New unit testing in Angular: vitest
 > End to end testing with Playwright
