@@ -18,7 +18,7 @@ const lsTodos = 'Todos'
 type TodoFilter = 'all' | 'active' | 'completed';
 
 type TodoState = {
-  todos: TodoItem[];
+  todos: TodoItem[]
   filter: TodoFilter;
   initialized: boolean;
 };

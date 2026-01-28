@@ -52,8 +52,9 @@ To clone the course repository:
 > an example using 'resource' (see todoNgRXresource example)
 - q - what code goes where for stateful coding....
 - Testing
-- New unit testing in Angular
+> New unit testing in Angular: vitest
 - End to end testing with Playwright
+- how to engage non-technical people with testing
 - Lab exercise: implement tests in existing projects
 - how to grab stuff off the VMs: tell me the folder and we will create a repo
 - course conclusion and feedback
